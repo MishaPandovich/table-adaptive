@@ -1,0 +1,74 @@
+.header {
+	height: 465px;
+
+	border: 1px solid green;
+}
+
+.header {
+	position: relative;
+	background: url('../img/circle-background.png') no-repeat;
+	background-size: cover;
+	z-index: 1;
+
+	&::before {
+		content: "";
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    z-index: -1;
+	    width: 262px;
+	    height: 325px;
+		background: url('../img/woman-background.png') no-repeat;
+	}
+}
+
+@media (min-width: 400px) {
+	.header {
+		background: url('../img/circle-background-table.png') no-repeat;
+		background-size: cover;
+	}
+}
+
+@media (min-width: 700px) {
+	.header {
+		height: 690px;
+		background: url('../img/circle-background-table.png') no-repeat;
+		background-size: cover;
+		z-index: 1;
+
+		&::before { 
+			content: "";
+		    position: absolute;
+		    right: 0;
+		    bottom: 0;
+		    z-index: -1;
+		    //width: 100%;
+		    width: 700px;
+		    height: 644px;
+		    background: url(../img/photo.png) no-repeat;
+		    background-position: 52px 0px;
+		    background-size: 785px 633px;
+		}
+	}
+}
+/*
+@media (min-width: 1250px) {
+	.header {
+		height: 790px;
+		background: url('../img/circle-background-desktop.png') no-repeat;
+
+		&::before {
+			content: "";
+		    position: absolute;
+		    right: 0;
+		    bottom: 0;
+		    z-index: -1;
+		    width: 100%;
+		    height: 780px;
+		    background: url(../img/photo.png) no-repeat;
+		    background-position: 381px 25px;
+		    background-size: 970px 760px;
+		}
+	}
+}
+*/

@@ -1,0 +1,91 @@
+.phone {
+	display: none;
+}
+
+.logo {
+	display: inline-block;
+    border-style: none;
+    //margin-top: 10px;
+    //margin-left: 12px;
+    margin-top: 3%;
+    margin-left: 3.7%;
+
+    & img {
+		width: 40px;
+    	height: 31px;
+	}
+}
+
+.menu-open {
+	border: none;
+	background: none;
+	margin-left: 70%;
+	cursor: pointer;
+}
+
+@media (min-width: 400px) {
+	.logo {
+		& img {
+			width: 60px;
+			height: 50px;
+		}
+	}
+
+	.menu-open {
+		margin-left: 35%;
+	}
+}
+
+@media (min-width: 700px) {
+	.logo {
+		margin-top: 2.6%;
+    	margin-left: 7.8%;
+
+		& img {
+			width: 50px;
+    		height: 43px;
+		}
+	}
+
+	.menu-open {
+		position: relative;
+	    border: none;
+	    background: none;
+	    top: -16px;
+	    margin-left: 33%;
+	}
+
+	.phone {
+		display: inline-block;
+	    position: relative;
+	    top: -20px;
+	    margin-left: 23%;
+    	letter-spacing: 0.7px;
+
+		font-family: Myriad Pro Regular, sans-serif;
+	    text-decoration: none;
+	    font-weight: bold;
+	    color: #000000;
+	}
+}
+/*
+@media (min-width: 1250px) {
+	.logo {
+	    margin-top: 30px;
+    	margin-left: 95px;
+
+    	& img {
+			width: 64px;
+    		height: 50px;
+    	}
+	}
+
+	.menu-open {
+		margin-left: 35%;
+	}
+
+	.phone {
+		margin-left: 33.5%;
+	}
+}
+*/
